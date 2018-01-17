@@ -11,6 +11,6 @@ const _config = fs.readdirSync(root)
     const key = filename.replace(/\.js$/, '')
     _config[key] = require(path.join(root, filename))
     return _config
-  })
+  }, {})
 
-module.export = Object.assign(config, _config)
+module.exports = Object.assign(config, _config)
