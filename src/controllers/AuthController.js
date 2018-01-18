@@ -1,6 +1,6 @@
 import {User} from '../models'
 const jwt = require('jsonwebtoken')
-const $auth = require('../services/auth')
+const $auth = require('../services/AuthService')
 
 module.exports = function (router) {
   /**
